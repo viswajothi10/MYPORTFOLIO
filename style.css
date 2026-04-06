@@ -1,19 +1,100 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    line-height: 1.6;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1, h2 {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #333;
+    line-height: 1.8;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #667eea;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #764ba2;
+    display: inline-block;
 }
 
 .section {
-    margin-bottom: 30px;
+    background: white;
+    margin-bottom: 35px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+    color: #555;
+}
+
+p strong {
+    color: #667eea;
+    font-weight: 600;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+
+a:hover {
+    color: #764ba2;
+    border-bottom: 2px solid #764ba2;
 }
 
 .contact {
-    margin-top: 40px;
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #667eea;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 0 15px;
 }
